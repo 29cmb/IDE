@@ -1,0 +1,21 @@
+{
+  "name": "cool-ide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx electron .",
+    "start-react": "cd client && npm start",
+    "dev": "concurrently \"node ./modules/delay.js 15000 && npm start\" \"npm run start-react\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "electron": "^33.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
